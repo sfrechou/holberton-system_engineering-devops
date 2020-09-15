@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(( $WATER + $STIR ))
+printf -v behlnort $(((5#$WATER) + (5#$STIR) ))
