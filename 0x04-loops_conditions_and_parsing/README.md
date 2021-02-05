@@ -21,7 +21,7 @@
 * The second line of all your Bash scripts should be a comment explaining what is the script doing
 
 ## Tasks
-# 0. Create a SSH RSA key pair
+### 0. Create a SSH RSA key pair
 Read for this task:
 man: ssh-keygen
 
@@ -29,32 +29,32 @@ You will soon have to manage your own servers concept page hosted on remote data
 
 Create a RSA key pair.
 
-# 1. For Holberton School loop
+### 1. For Holberton School loop
 Write a Bash script that displays Holberton School 10 times.
 
 Requirements:
 * You must use the for loop (while and until are forbidden)
 
-# 2. While Holberton School loop
+### 2. While Holberton School loop
 Write a Bash script that displays Holberton School 10 times.
 
 Requirements:
 * You must use the while loop (for and until are forbidden)
 
-# 3. Until Holberton School loop
+### 3. Until Holberton School loop
 Write a Bash script that displays Holberton School 10 times.
 
 Requirements:
 * You must use the until loop (for and while are forbidden)
 
-# 4. If 9, say Hi!
+### 4. If 9, say Hi!
 Write a Bash script that displays Holberton School 10 times, but for the 9th iteration, displays Holberton School and then Hi on a new line.
 
 Requirements:
 * You must use the while loop (for and until are forbidden)
 * You must use the if statement
 
-# 5. 4 bad luck, 8 is your chance
+### 5. 4 bad luck, 8 is your chance
 Write a Bash script that loops from 1 to 10 and:
 
 * displays bad luck for the 4th loop iteration
@@ -64,7 +64,7 @@ Requirements:
 * You must use the while loop (for and until are forbidden)
 * You must use the if, elif and else statements
 
-# 6. Superstitious numbers
+### 6. Superstitious numbers
 Write a Bash script that displays numbers from 1 to 20 and:
 
 * displays 4 and then bad luck from China for the 4th loop iteration
@@ -74,7 +74,7 @@ Requirements:
 * You must use the while loop (for and until are forbidden)
 * You must use the case statement
 
-# 7. Clock
+### 7. Clock
 Write a Bash script that displays the time for 12 hours and 59 minutes:
 
 * display hours from 0 to 12
@@ -82,7 +82,7 @@ Write a Bash script that displays the time for 12 hours and 59 minutes:
 Requirements:
 * You must use the while loop (for and until are forbidden)
 
-# 8. For ls mandatory
+### 8. For ls mandatory
 Write a Bash script that displays:
 
 * The content of the current directory
@@ -92,7 +92,7 @@ Requirements:
 * You must use the for loop (while and until are forbidden)
 * Do not display hidden files
 
-# 9. To file, or not to file mandatory
+### 9. To file, or not to file mandatory
 Write a Bash script that gives you information about the holbertonschool file.
 
 Requirements:
@@ -106,7 +106,7 @@ Requirements:
     - if the file is a regular file: holbertonschool is a regular file
     - if the file is not a regular file: (nothing)
 
-# 10. FizzBuzz
+### 10. FizzBuzz
 Write a Bash script that displays numbers from 1 to 100.
 
 Requirements:
@@ -116,7 +116,7 @@ Requirements:
 * Otherwise, displays the number
 * In a list format
 
-# 11. Read and cut #advanced
+### 11. Read and cut #advanced
 help: read
 
 Write a Bash script that displays the content of the file /etc/passwd.
@@ -128,7 +128,7 @@ Your script should only display:
 Requirements:
 * You must use the while loop (for and until are forbidden)
 
-# 12. Tell the story of passwd #advanced
+### 12. Tell the story of passwd #advanced
 Read:
 * IFS (internal field separator)
 * Understanding /etc/passwd
@@ -142,7 +142,7 @@ Format: The user USERNAME is part of the GROUP_ID gang, lives in HOME_DIRECTORY 
 Requirements:
 * You must use the while loop (for and until are forbidden)
 
-# 13. Let's parse Apache logs #advanced
+### 13. Let's parse Apache logs #advanced
 Apache is among the most popular web servers in the world, serving 50% of all active websites, no doubt that you will have to interact with it within your career.
 
 As a Full-Stack Software Engineer, you have to master the art of parsing log files. Today we will do a simple parsing of Apache log access files.
@@ -158,7 +158,7 @@ Requirement:
 * You are not allowed to use while, for, until and cut
 * Download and commit the apache-access.log file along with your answers files
 
-# 14. Dig the data #advanced
+### 14. Dig the data #advanced
 Now that you’ve parsed the Apache log file, let’s sort the data so you can get a better idea of what is going on.
 
 Using what you did in the previous exercise, write a Bash script that groups visitors by IP and HTTP status code, and displays this data.
