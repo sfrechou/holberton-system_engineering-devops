@@ -18,6 +18,8 @@ int main(void)
 		ch_pid = fork();
 		if (ch_pid > 0)
 			printf("Zombie process created, PID: %i\n", ch_pid);
+		else
+			return (0);
 	}
 	infinite_while();
 	return (0);
