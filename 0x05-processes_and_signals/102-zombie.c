@@ -13,7 +13,7 @@ int main(void)
 	pid_t ch_pid;
 	int i;
 
-	for (i = 0; i <= 5; i++)
+	for (i = 0; i < 5; i++)
 	{
 		ch_pid = fork();
 		if (ch_pid > 0)
