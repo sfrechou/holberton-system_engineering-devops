@@ -16,7 +16,7 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 ```
 ## Tasks
 #### 0. Simply matching Holberton
-![Image example fot task 0](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/9/ec65557f0da1fbfbff6659413885e4d4822f5b1d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210222%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210222T225309Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ad056cbcf9ffec6d2901a863b9def74f6c60616805ade4e08dd549574c1e4268)
+![Image example fot task 0](https://github.com/sfrechou/holberton-system_engineering-devops/blob/master/0x06-regular_expressions/readme_images/task0.png)
 Requirements:
 * The regular expression must match Holberton
 * Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
