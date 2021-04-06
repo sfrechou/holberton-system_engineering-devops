@@ -20,4 +20,5 @@ file_line { '/redirect_me':
 
 service { 'nginx':
   ensure  => 'running',
+  require => File_line['/redirect_me']
 }
