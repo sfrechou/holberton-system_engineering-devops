@@ -1,7 +1,6 @@
 # Install nginx
 package { 'nginx':
-  ensure   => 'present',
-  name     => 'nginx',
+  ensure   => installed,
 }
 # root / with a GET request using curl, it must return a page that contains the string Holberton School
 file { 'index.html':
@@ -10,7 +9,7 @@ file { 'index.html':
 }
 
 # The redirection must be a “301 Moved Permanently”
-file_line { '/redirect_me':
+file_line { 'redirect_me':
   ensure => present,
   path   => '/etc/nginx/sites-available/default',
   after  => 'server_name _;'
@@ -19,5 +18,5 @@ file_line { '/redirect_me':
 
 service { 'nginx':
   ensure  => 'running',
-  require => File_line['/redirect_me']
+  require => Package['nginx']
 }
