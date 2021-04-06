@@ -1,8 +1,7 @@
 # Install nginx
 package { 'nginx':
-  ensure   => present,
+  ensure   => 'present',
   name     => 'nginx',
-  provider => 'apt',
 }
 # root / with a GET request using curl, it must return a page that contains the string Holberton School
 file { 'index.html':
