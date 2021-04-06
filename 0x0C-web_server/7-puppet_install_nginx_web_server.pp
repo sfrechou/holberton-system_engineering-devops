@@ -1,8 +1,4 @@
 # Install nginx
-class{ 'nginx':
-  package_source => 'nginx',
-  package_name   => 'nginx',
-}
 package { 'nginx':
   ensure   => present,
   provider => 'apt',
