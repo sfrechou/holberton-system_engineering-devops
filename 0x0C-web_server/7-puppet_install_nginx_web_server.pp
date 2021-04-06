@@ -4,6 +4,7 @@ package { 'nginx':
 }
 
 file { 'index.html':
+  ensure  => present,
   path    => '/var/www/html/index.html',
   content => 'Holberton School',
 }
