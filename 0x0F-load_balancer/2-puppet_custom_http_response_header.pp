@@ -5,8 +5,11 @@ package { 'nginx':
   name     => 'nginx',
 }
 
-location /etc/nginx/sites-available/default {
-  add_header X-Served-B $HOSTNAME,      
+::nginx::resource::vhost {
+[...]
+add_header=> {
+'X-Served-By' => '$HOSTNAME',
+}
 }
 
 service { 'nginx':
