@@ -6,7 +6,7 @@ package { 'nginx':
 }
 
 location /etc/nginx/sites-available/default {
-  add_header X-Served-B $HOSTNAME ;      
+  add_header X-Served-B $HOSTNAME,      
 }
 
 service { 'nginx':
