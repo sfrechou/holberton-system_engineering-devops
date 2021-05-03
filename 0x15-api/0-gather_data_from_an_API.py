@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script that returns information about given employee's TODO list progress"""
+"""Script that returns information about given employee's todo list progress"""
 import requests
 from sys import argv
 
