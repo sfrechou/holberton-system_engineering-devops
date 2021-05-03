@@ -28,5 +28,5 @@ for content in range(len(p)):
         if key == 'completed' and value is True:
             print("\t {}".format(p[content].get('title')))
 
-if __name__ != "__main__":
+if __name__ == "__main__":
     pass
