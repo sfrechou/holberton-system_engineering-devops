@@ -8,7 +8,8 @@ import requests
 
 def recurse(subreddit, hot_list=[], after=None):
     """Queries the Reddit API and returns a list of titles of hot articles"""
-    url = "https://www.reddit.com/r/" + subreddit + "/hot.json" + "?after=" + str(after)
+    after = str(after)
+    url = "https://www.reddit.com/r/" + subreddit + "/hot.json?after=" + after
     headers = {'User-Agent': 'Mozilla/5.0'}
     response = requests.get(url, headers=headers, allow_redirects=False)
 
@@ -21,6 +22,6 @@ def recurse(subreddit, hot_list=[], after=None):
             return recurse(subreddit, hot_list, after)
         else:
             return hot_list
-            
+
     else:
         return None
