@@ -1,5 +1,5 @@
 [Unit]
-Description=Starts a Gunicorn process to serve the content in web_dynamic/2-hbnb.py
+Description=Starts a Gunicorn process
 After=network.target
 
 [Service]
