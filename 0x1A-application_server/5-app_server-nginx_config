@@ -54,9 +54,9 @@ location /api/ {
 
 }
 
-location / {
+location /static/ {
         include proxy_params;
-        proxy_pass http://localhost:5003/2-hbnb/;
+        proxy_pass http://localhost:5003;
 }
         # Add index.php to the list if you are using PHP
         index index.html index.htm index.nginx-debian.html;
@@ -74,6 +74,8 @@ rewrite ^/redirect_me/ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;
                 # as directory, then fall back to displaying a 404.
  add_header X-Served-By gc-2142-web-01-1617572569 ;
                 try_files $uri $uri/ =404;
+                include prixy_params;
+                proxy_pass http://localhost:5003/2-hbnb/;
         }
 
         # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
