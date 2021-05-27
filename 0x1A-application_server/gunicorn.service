@@ -6,7 +6,7 @@ After=network.target
 User=ubuntu
 Group=ubuntu
 WorkingDirectory=/home/ubuntu/AirBnB_clone_v4/
-ExecStart=/usr/bin/gunicorn --workers 3 --bind 0.0.0.0:5003 web_dynamic.2-hbnb:app --access-logfile /tmp/airbnb-error.log --error-logfile /tmp/airbnb-access.log
+ExecStart=/usr/bin/gunicorn --workers 3 --bind 0.0.0.0:5003 web_dynamic.2-hbnb:app --error-logfile /tmp/airbnb-error.log --access-logfile /tmp/airbnb-access.log
 Restart=on-failure
 
 [Install]
