@@ -74,7 +74,7 @@ rewrite ^/redirect_me/ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;
                 # as directory, then fall back to displaying a 404.
  add_header X-Served-By gc-2142-web-01-1617572569 ;
                 try_files $uri $uri/ =404;
-                include prixy_params;
+                include proxy_params;
                 proxy_pass http://localhost:5003/2-hbnb/;
         }
 
